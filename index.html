@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ajay Kumar Yadav Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+.project {
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+}
+
+.project .img.certificate-img {
+    height: 260px; /* Use your preferred height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project .img.certificate-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project .text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Ajay Kumar Yadav</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <!-- <li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li> -->
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img;" >
+					<!-- <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/coumpter.jpg);"  > -->
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Namaste!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ajay Kumar Yadav</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+					    'Data Avicionado   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A  Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="http://www.linkedin.com/in/ajayyadav343" class="btn btn-primary py-3 px-4" target="_blank">LinkedIn</a> 
+							<a href="https://github.com/yadavajaykumar5050" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src= "images/download (1).png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Ajay Kumar Yadav</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>6 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Excel</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Power BI</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Tableau</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Python</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>AI in Data Analysis</span> <span class="pull-right">80%</span>
+									<div class="progress">
+									    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>		
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Recent BSC.IT graduate skilled in utilizing tools such as SQL, Python, Advance Excel, and Power BI.
+									Proficient in data collectin,meticulous data cleaning, insightful data analysis,and data Visualization.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Science(IT)</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Programing Languages:</span> <span>SQL, Python</span></li>
+									<li class="d-flex"><span>Visualization Tools:</span> <span>Microsoft Power BI, Tableau, Matplotlib, Seaborn</span></li>
+									<li class="d-flex"><span>Technical Skills:</span> <span> Excel, SQL, Power BI, Python </span></li>
+									<li class="d-flex"><span>Soft Skills:</span> <span>Problem-solving, Critical Thinking, Teamwork</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="http://www.linkedin.com/in/ajayyadav343" class="btn btn-primary py-3 px-3" target="_blank">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>As a recent BSc.IT graduate passionate about data analysis, I'm ready to leverage my skills in SQL, Python,Power BI to drive success in a dynamic environment.</p>
+			With a strong foundation in data visualization and database management, I aim to contribute immediately in a data analyst role, enhancing business insights and decision-making
+		</div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<!-- <div class="col-md-6"> -->
+					<div class="resume-wrap ftco-animate">
+						<span class="date">FEB2024-JUL2024</span>
+						<h2>Data Analyst Intern</h2>
+						<span class="position">Ntech Global Solution</span>
+						<p class="mt-4"> 
+							<ul>
+								<li>Led the collection and integration of over 10 diverse datasets for comprehensive analysis.</li>
+								<li>Elevated team productivity by 30% through impactful data visualizations, streamlining analysis and decision-making, and optimizing resource allocation for improved business outcomes.</li>
+								<li>Developed and implemented Python-based visualizations, improving pattern recognition by 40% and enabling comprehensive insights into complex datasets</li>
+								<li>Designed and optimized data quality checks to ensure 100% compliance with data accuracy and consistency.</li>
+                             </ul>
+						</p>
+					</div>
+
+				</div>
+
+				<!-- <div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June 2024-July 2024</span>
+						<h2>Data Analytics Internship</h2>
+						<span class="position">Internship Studio</span>
+						<p class="mt-4">Internship Studio offers comprehensive training and practical experience in data analysis and reporting.
+							<ul>
+								<li>Trained and leveraging the on-demand tools like Excel, SQL and Python for Data analysis to transform raw data into actionable insights.</li>
+								<li>Designed and implemented a robust SQL database schema, ensuring 100% efficient storage and retrieval of sales data using SQL DDL commands.</li>
+								<li>Conducted extensive data exploration using Python (pandas, matplotlib, seaborn), identifying key trends and patterns in sales data and represent reports through Excel dashboard.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div> -->
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2023</span>
+    					<h2>Bachelor of Science(IT,CS)</h2>
+    					<span class="position">University of Mumbai</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2020</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Tarapur Vidya Mandir</span>
+    					<p class="mt-4">Grade: First class.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href=" " class="btn btn-primary py-4 px-5" target="_blank">MY Resume</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below there are Data Analytics projects on Excel ,SQL, Python, Power BI, Tableau & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/yadavajaykumar5050/Atliq-hotels-revenue-insights-dashboard" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/HOTEL.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/yadavajaykumar5050/Atliq-hotels-revenue-insights-dashboard" target="_blank">Atiq hotel revenue Data Analysis using PowerBI & DAX</a></h3>
+                <p>Conducted revenue analysis using PowerBI and DAX measures to identify areas where Atliq Hotels lagged behind competitors.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/yadavajaykumar5050/Superstore_powerbi-dashboard" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/SUPERSTORE.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/yadavajaykumar5050/Superstore_powerbi-dashboard" target="_blank">Super Store Data Analysis using & Excel</a></h3>
+                <p>To contribute to the success of a business by utilizing data analysis techniques, specifically focusing on time series analysis, to provide valuable insights and accurate sales forecasting.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/yadavajaykumar5050/Chandrayaan-3-Data-Analysis" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/CHANDRAYAAN.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/yadavajaykumar5050/Chandrayaan-3-Data-Analysis" target="_blank">Chandrayaan 3 Data Analysis using Python & PowerBI</a></h3>
+                <p>Chandrayaan 3 Moon Mission Data Analysis project! In this exciting continuation, we dive deeper into the world of data analysis using Python to unlock valuable insights from the mission data.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/yadavajaykumar5050/credit-card-data-analysis-dashboard" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/CREDIT.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/yadavajaykumar5050/credit-card-data-analysis-dashboard" target="_blank">Credit Card Data Analysis using PowerBI & SQL</a></h3>
+				  <p>To develop a comprehensive credit card weekly dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/yadavajaykumar5050/Car_Sales_dashboard" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/car\ sales.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/yadavajaykumar5050/Car_Sales_dashboard" target="_blank"> Car_Sales_dashboard using PowerBI</a></h3>
+				  <p>Our company is a car dealership that sells various car models. To effectively track and analyse our sales performance, we need a comprehensive Car Sales Dashboard in Power BI.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/yadavajaykumar5050/Electric_Vehicles_Tableau_dashboard" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/Electric\ Vehicles.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/yadavajaykumar5050/Electric_Vehicles_Tableau_dashboard" target="_blank">Electric Vehicles Sales & Reporting Using Tableau</a></h3>
+				  <p>Our company is a car dealership that sells various car models. To effectively track and analyse our sales performance, we need a comprehensive Electric Vehicles Sales Dashboard in Tableau.</p>
+				</div>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+
+	<!-- <section class="ftco-section" id="certifications-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Certifications</h1>
+					<h2 class="mb-4">Certifications</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 mb-5">
+					<div class="blog-entry justify-content-end">
+						<div class="img certificate-img">
+							<img src="images/Basic-to-Advanced-Microsoft-Excel-1.png" class="img-fluid" alt="Certification 1">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<h3><a href="https://excel.jatanshah.in/your-certificate/2D08A52296CD-2D0AED340F45-838F935E23/" target="_blank">Microsoft Excel</a></h3>
+							<p>Conducted by Skill Nation</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-5">
+					<div class="blog-entry justify-content-end">
+						<div class="img certificate-img">
+							<img src="images/CertificateOfCompletion_Career Essentials in Data Analysis by Microsoft and LinkedIn-1.png" class="img-fluid" alt="Certification 2">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<h3><a href="https://www.linkedin.com/learning/certificates/a64946567922690e849ae2b674ff36ea01eabceb11c95740e5a0b130ecc58f2f" target="_blank">Data Analysis</a></h3>
+							<p>Conducted by Microsoft</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-5">
+					<div class="blog-entry justify-content-end">
+						<div class="img certificate-img">
+							<img src="images/Career Essentials in Generative AI by Microsoft and LinkedIn-1.png" class="img-fluid" alt="Certification 3">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<h3><a href="https://www.linkedin.com/learning/certificates/e99ac7d9a0b6da54adadb0aa3d326b88b5b7e94df4bf1969f1096e0c8905730f" target="_blank">Generative AI</a></h3>
+							<p>Conducted by Microsoft</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-5">
+					<div class="blog-entry justify-content-end">
+						<div class="img certificate-img">
+							<img src="images/Learn tube Power BI Certificate.jpg" class="img-fluid" alt="Certification 4">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<h3><a href="https://drive.google.com/file/d/1R_1m9KVh62bB82xvcw6ALHvr48GntCKA/view?usp=sharing" target="_blank">Microsoft Power BI</a></h3>
+							<p>Conducted by LearnTube</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-5">
+					<div class="blog-entry justify-content-end">
+						<div class="img certificate-img">
+							<img src="images/Accenture North America_completion_certificate-1.png" class="img-fluid" alt="Certification 5">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<h3><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_SfcN2FPC88EpKRTwb_1716228402005_completion_certificate.pdf" target="_blank">Data Analytics & Visualization</a></h3>
+							<p>Conducted by Accenture</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-5">
+					<div class="blog-entry justify-content-end">
+						<div class="img certificate-img">
+							<img src="images/Data Visualization Empowering Business with Effective Insights- Tata-1.png" class="img-fluid" alt="Certification 6">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<h3><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata%20Group_SfcN2FPC88EpKRTwb_1720977145010_completion_certificate.pdf" target="_blank">Data Visualization</a></h3>
+							<p>Conducted by Tata</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	 -->
+	
+	
+	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="14">0</strong>
+                <span>Certificates Achieved</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div> -->
+          <!--<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve data problems &amp; transforming the data into actionable insights </h4>
+						<br>
+						<p><a href="https://github.com/yadavajaykumar5050" class="btn btn-primary py-3 px-5" target="_blank">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Mumbai, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://8010610466">+91 8010610466</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="aky50502020@gmail.com">aky50502020@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href=" " target="_blank">Resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="http://www.linkedin.com/in/ajayyadav343" target="_blank"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://github.com/yadavajaykumar5050" target="_blank"><span class="icon-github"></span></a></li>
+				      
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
